@@ -1,0 +1,21 @@
+.list{
+    display: flex;
+    gap: 30px;
+}
+.item{
+    border: 5px, solid, black;
+    border-radius: 40px;
+    list-style: none;
+    padding-left: 20px;
+}
+.label{
+    font-size: 20px;
+}
+.choiceList{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px,solid,purple;
+    border-radius: 40px;
+}
