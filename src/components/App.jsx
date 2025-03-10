@@ -5,16 +5,16 @@ import { Choice } from './Sticker/Choice';
 
 export class App extends Component {
   state = {
-    img: '',
+    label: '',
   };
-  onChoose = newImg => {
-    this.setState({ img: newImg });
+  onChoose = newLabel => {
+    this.setState({ label: newLabel });
   };
   render() {
     return (
       <>
-        <StikerList data={data} choose={this.onChoose} />
-        <Choice img={this.state.img} />
+        <StikerList data={data} choose={this.onChoose} newLabel = {this.state.label} />
+        {/* <Choice label={this.state.label} /> */}
       </>
     );
   }

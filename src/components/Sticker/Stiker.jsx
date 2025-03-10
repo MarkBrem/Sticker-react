@@ -1,7 +1,7 @@
 import s from './Stiker.module.css'
-export const StikerItem = ({img, label, choose})=>{
-    return <li className={s.item} onClick={()=>{choose(img)}}>
+export const StikerItem = ({img, label, newLabel, choose})=>{
+    return <li className={s.item} onClick={()=>{choose(label)}}>
         <img src={img} alt="" />
-        <p className={s.label}>{label}</p>
+        {newLabel === label && <p>{newLabel}</p>}
     </li>
 }
